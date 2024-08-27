@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Decodificador de texto</title>
+  </head>
+  <body>
+    <main class="container-principal">
+      <section class="conteudo-principal">
+        <img
+          src="src/images/Alura Logo.png"
+          width="120px"
+          height="48px"
+          class="logo-alura"
+          alt="Logo Alura"
+        />
+        <textarea
+          class="input-texto"
+          cols="30"
+          rows="9"
+          placeholder="Digite seu texto..."
+          autofocus
+        ></textarea>
+        <p style="background-color: #f6ebeb; border-radius: 30px ; padding: 0 10px 3px 10px; width:max-content">
+          <span>
+            <img
+              src="src/images/alert_vector.png"
+              alt="alerta"
+              width="10px"
+              height="10px"
+            />
+          </span>
+          <span style="font-size: 13px;" class="info"
+            >apenas letras minusculas e sem acento.</span
+          >
+        </p>
+        <div class="container-botoes">
+          <button
+            type="button"
+            class="btn botao-criptografar"
+            onclick="criptografar()"
+          >
+            Criptografar
+          </button>
+          <button
+            type="button"
+            class="btn botao-descriptografar"
+            onclick="descriptografar()"
+          >
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <div class="display-texto fade-in">
+        <div class="resultado-texto">
+          <img
+            src="src/images/waiting_for_text.png"
+            width="220px"
+            height="200px"
+            alt="Mensagem Inválida"
+            class="imagem-conteudo"
+          />
+          <h3>Nenhuma mensagem encontrada</h3>
+          <p>
+            Digite uma mensagem para ser criptografada ou descriptografada, ela
+            aparecerá aqui
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="desenvolvido-por">Desenvolvido por Gustavo</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
